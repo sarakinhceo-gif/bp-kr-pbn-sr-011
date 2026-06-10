@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="midnight-glass">
+    <meta name="bpaas-design-theme" content="kr-midnight-glass">
+    <title>등촌 노래방 추천 - 가성비와 분위기, 시스템까지 완벽한 블로그</title>
+    <meta name="description" content="등촌에서 진짜 노래방을 찾는다면? 가성비, 분위기, 시스템까지 완벽한 등촌 노래방 추천. 전화 010-6279-0862로 예약하고 확실하게 즐겨라.">
+    <meta name="keywords" content="등촌 노래방, 등촌 노래방 추천, 등촌 가성비 노래방, 등촌 코인노래방, 등촌 노래방 예약, 등촌 노래방 가격, 등촌 노래방 후기">
+    <link rel="canonical" href="https://kr-pbn-sr-011.vercel.app/">
+    <meta property="og:title" content="등촌 노래방 추천 - 겉멋 부리지 말고 제대로 즐기는 법">
+    <meta property="og:description" content="등촌에서 진짜 노래방을 찾는다면? 가성비, 분위기, 시스템까지 완벽한 등촌 노래방 추천. 전화 010-6279-0862로 예약하고 확실하게 즐겨라.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kr-pbn-sr-011.vercel.app/">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="theme-color" content="#0b0f1c">
+    <style>
+        /* Reset & Base */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        body {
+            font-family: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #0b0f1c;
+            color: #e8eaf0;
+            line-height: 1.7;
+            font-weight: 350;
+            letter-spacing: -0.01em;
+        }
+        a {
+            color: #b0b8d1;
+            text-decoration: none;
+            transition: color 0.2s ease, border-color 0.2s ease;
+            border-bottom: 1px solid transparent;
+        }
+        a:hover {
+            color: #ffffff;
+            border-bottom-color: #6c7a9e;
+        }
+        img, svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* Typography - Editorial Luxury */
+        h1, h2, h3, h4 {
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: #f0f2f8;
+        }
+        h1 {
+            font-size: clamp(2.2rem, 6vw, 3.8rem);
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.2rem;
+            border-left: 6px solid #3e4d6b;
+            padding-left: 1.2rem;
+        }
+        h2 {
+            font-size: clamp(1.6rem, 4vw, 2.4rem);
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #2a3042;
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            color: #cbd0e0;
+        }
+        p {
+            margin-bottom: 1.4rem;
+            color: #d6dae8;
+        }
+        p:first-of-type::first-letter {
+            font-size: 3.2rem;
+            font-weight: 600;
+            float: left;
+            margin-right: 0.5rem;
+            margin-top: 0.2rem;
+            color: #a6b3d0;
+            line-height: 1;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        /* Header & Navigation */
+        .site-header {
+            padding: 1.2rem 0;
+            border-bottom: 1px solid #1f2537;
+            background-color: #0b0f1c;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(6px);
+            background-color: rgba(11, 15, 28, 0.88);
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .logo a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #e8eaf0;
+            border-bottom: none;
+            letter-spacing: -0.02em;
+        }
+        .logo a:hover {
+            color: #ffffff;
+        }
+        .nav-list {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-list a {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #b0b8d1;
+            border-bottom: none;
+            padding: 0.3rem 0;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        .nav-list a:hover {
+            color: #ffffff;
+            border-bottom-color: #6c7a9e;
+        }
+        .tel-link {
+            background-color: #2a3042;
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            font-weight: 500;
+            color: #e8eaf0 !important;
+            border-bottom: none !important;
+            transition: background-color 0.2s;
+        }
+        .tel-link:hover {
+            background-color: #3e4d6b;
+        }
+        .hamburger-menu {
+            display: none;
+            background: none;
+            border: none;
+            color: #e8eaf0;
+            font-size: 1.8rem;
+            cursor: pointer;
+            padding: 0.2rem 0.4rem;
+        }
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                background-color: #121726;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                padding: 1.5rem 2rem;
+                gap: 1.2rem;
+                border-bottom: 1px solid #2a3042;
+            }
+            .nav-list.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: block;
+            }
+            .header-inner {
+                flex-wrap: wrap;
+            }
+            .site-header {
+                position: relative;
+            }
+        }
+        /* Hero / article header */
+        .article-hero {
+            padding: 3rem 0 1.5rem 0;
+        }
+        .article-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: #8b95b0;
+            margin-bottom: 1.8rem;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+        .article-meta span {
+            border-left: 1px solid #2a3042;
+            padding-left: 0.8rem;
+        }
+        .article-meta span:first-child {
+            border-left: none;
+            padding-left: 0;
+        }
+        .featured-image {
+            margin: 2rem 0 2.5rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #1a1f2e;
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4d5670;
+            font-size: 0.9rem;
+        }
+        .featured-image svg {
+            width: 60px;
+            height: 60px;
+            fill: #4d5670;
+            opacity: 0.5;
+        }
+        .content-card {
+            background-color: #101520;
+            border-radius: 12px;
+            padding: 2rem 2rem 2.5rem;
+            margin: 2.5rem 0;
+            border: 1px solid #232a3e;
+        }
+        .content-card h3 {
+            margin-top: 0;
+        }
+        .btn-cta {
+            display: inline-block;
+            background-color: #2f3b57;
+            padding: 0.7rem 2rem;
+            border-radius: 40px;
+            color: #f0f2f8;
+            font-weight: 500;
+            border-bottom: none;
+            transition: background-color 0.2s, transform 0.1s;
+            margin-top: 0.5rem;
+        }
+        .btn-cta:hover {
+            background-color: #4a5a7c;
+            color: #ffffff;
+            border-bottom: none;
+            transform: scale(1.02);
+        }
+        .faq-item {
+            border-bottom: 1px solid #232a3e;
+            padding: 1.2rem 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: #d0d6e8;
+            margin-bottom: 0.3rem;
+        }
+        .faq-answer {
+            color: #aeb6cc;
+            padding-left: 0.5rem;
+        }
+        blockquote {
+            border-left: 4px solid #3e4d6b;
+            padding: 0.8rem 1.2rem;
+            margin: 1.8rem 0;
+            background-color: #111725;
+            font-style: italic;
+            color: #c4cce0;
+        }
+        .footer-note {
+            text-align: center;
+            padding: 2.5rem 0 1rem;
+            border-top: 1px solid #1f2537;
+            color: #6c7a9e;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 1rem;
+            }
+            .content-card {
+                padding: 1.5rem;
+            }
+            h1 {
+                padding-left: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="/">등촌노래방</a>
+            </div>
+            <button class="hamburger-menu" aria-label="메뉴 열기" onclick="document.querySelector('.nav-list').classList.toggle('active')">☰</button>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/blog/">블로그</a></li>
+                    <li><a href="/price/">가격</a></li>
+                    <li><a href="/review/">후기</a></li>
+                    <li><a href="tel:01062790862" class="tel-link">010-6279-0862</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <article>
+                <div class="article-hero">
+                    <div class="article-meta">
+                        <span>등촌 노래방</span>
+                        <span>4분 읽기</span>
+                        <span>가성비 끝판왕</span>
+                    </div>
+                    <h1>등촌 노래방 추천 — 겉멋 부리지 말고 제대로 즐기는 법</h1>
+                    <p>가성비, 분위기, 시스템. 셋 중 하나라도 놓치면 그냥 돈 버는 거다. 등촌에서 진짜 노래방을 찾는다면 이 글이 답이다.</p>
+                    <div class="featured-image">
+                        <svg viewBox="0 0 24 24" width="60" height="60" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                    </div>
+                </div>
+
+                <p>등촌에 노래방은 넘쳐난다. 길 하나만 건너도 간판이 바뀐다. 근데 왜 대부분은 실패할까? 이유는 단순하다. <strong>분위기, 시스템, 가성비</strong> 이 세 가지를 동시에 만족시키는 곳이 극히 드물기 때문이다. 나는 등촌에서 3년째 노래방을 찾아다니는 사람이다. 오늘은 진짜 추천하는 단 한 곳만 이야기한다.</p>
+
+                <h2>분위기에 속지 마라 — 진짜는 시스템이다</h2>
+                <p>어두운 조명, 가죽 소파, 거울 천장? 그런 건 이제 기본이다. 진짜를 구분하는 기준은 <strong>음질과 반응 속도</strong>다. 마이크에서 지지직 거리는 소리, 버튼 눌러도 2초 늦게 나오는 반주 — 이런 데서 노래하면 스트레스만 쌓인다. 등촌에서 내가 추천하는 곳은 <strong>JQ노래방</strong> (가칭, 실제 위치는 010-6279-0862로 문의). 여기는 반주 딜레이가 거의 없고, 마이크가 공간을 꽉 채운다. 가성비도 미친다. 2시간에 2만 원 초반대. 코인노래방 가격에 퀄리티는 프리미엄.</p>
+
+                <div class="content-card">
+                    <h3>📞 등촌 노래방 예약 & 문의</h3>
+                    <p>전화 한 통이면 분위기, 시스템, 가격까지 확실하게 안내. 겉멋 부리지 말고 제대로 즐기고 싶다면 지금 전화해라.</p>
+                    <a href="tel:01062790862" class="btn-cta">010-6279-0862 전화걸기</a>
+                </div>
+
+                <h2>가성비의 함정: 싸다고 다 좋은 게 아니다</h2>
+                <p>등촌에는 1시간에 5천 원짜리 노래방도 있다. 하지만 거기 가면 마이크는 고장났거나, 반주가 엉망이다. 결국 돈만 날리고 기분만 상한다. 진짜 가성비는 <strong>'가격 대비 만족도'</strong>다. 내가 추천하는 곳은 시간당 1만 원 초반대지만, 음질과 청결, 시스템이 완벽에 가깝다. 특히 <strong>리모컨 반응 속도</strong>와 <strong>최신곡 업데이트</strong>가 빠르다. 등촌에서 이 조건을 만족하는 곳은 손에 꼽힌다.</p>
+
+                <blockquote>“등촌에서 노래방 찾는다면 무조건 전화해라. 가격만 묻지 말고 시스템과 분위기까지 물어봐라. 진짜는 전화에서 걸러진다.” – 등촌 노래방 블로거</blockquote>
+
+                <h2>등촌 노래방 추천 FAQ</h2>
+                <div class="faq-item">
+                    <div class="faq-question">Q. 등촌에서 가장 분위기 좋은 노래방은?</div>
+                    <div class="faq-answer">분위기만 따지면 여러 곳 있지만, 시스템까지 완벽한 곳은 JQ노래방 (전화 010-6279-0862). 인테리어는 모던하고 조명이 감성적이면서도 마이크 음질이 깔끔하다.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q. 코인노래방 vs 일반 노래방, 등촌에서는 뭐가 낫나?</div>
+                    <div class="faq-answer">코인노래방은
+</body>
+</html>
