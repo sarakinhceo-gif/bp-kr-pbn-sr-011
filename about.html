@@ -1,408 +1,406 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>등촌 노래방 추천 | 프리미엄 사운드 시스템 · 합리적 가격</title>
-    <meta name="description" content="등촌 노래방 추천 최적의 공간. 최신 음향 시스템, 청결한 룸, 합리적 가격으로 완성된 프리미엄 노래방. 24시간 운영, 단체 · 데이트 · 접대 모두 적합. 010-6279-0862 예약.">
-    <meta name="keywords" content="등촌 노래방, 등촌 노래방 추천, 등촌 노래방 가격, 등촌 노래방 예약, 등촌 노래방 후기, 등촌 노래방 시스템, 등촌 노래방 단체">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-mono-chrome">
-    <link rel="canonical" href="https://deungchon-song-tip.namanavi.com/about.html">
-    <meta property="og:title" content="등촌 노래방 추천 | 프리미엄 사운드 시스템 · 합리적 가격">
-    <meta property="og:description" content="등촌 노래방 추천 최적의 공간. 최신 음향 시스템, 청결한 룸, 합리적 가격으로 완성된 프리미엄 노래방. 24시간 운영, 단체 · 데이트 · 접대 모두 적합. 010-6279-0862 예약.">
-    <style>
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #000;
-            color: #f5f5f7;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            z-index: 1000;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 64px;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            color: #fff;
-            text-decoration: none;
-        }
-        .logo span {
-            color: #86868b;
-        }
-        nav {
-            display: flex;
-            gap: 32px;
-        }
-        nav a {
-            color: #a1a1a6;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-        nav a:hover {
-            color: #fff;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            background: none;
-            border: none;
-        }
-        .hamburger span {
-            display: block;
-            width: 22px;
-            height: 2px;
-            background-color: #f5f5f7;
-            margin: 3px 0;
-            transition: all 0.3s ease;
-        }
-        .nav-mobile {
-            display: none;
-        }
-        @media (max-width: 768px) {
-            nav {
-                display: none;
-            }
-            .hamburger {
-                display: flex;
-            }
-            .nav-mobile {
-                display: none;
-                flex-direction: column;
-                background-color: rgba(0, 0, 0, 0.95);
-                position: fixed;
-                top: 64px;
-                left: 0;
-                width: 100%;
-                padding: 24px;
-                gap: 20px;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            }
-            .nav-mobile a {
-                color: #a1a1a6;
-                text-decoration: none;
-                font-size: 1.1rem;
-                font-weight: 500;
-            }
-            .nav-mobile a:hover {
-                color: #fff;
-            }
-            .nav-mobile.active {
-                display: flex;
-            }
-        }
-        main {
-            padding-top: 88px;
-            padding-bottom: 80px;
-        }
-        .section-title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: -0.03em;
-            margin-bottom: 48px;
-            color: #fff;
-            line-height: 1.2;
-        }
-        .section-subtitle {
-            font-size: 1rem;
-            color: #86868b;
-            margin-bottom: 32px;
-            font-weight: 400;
-        }
-        .grid-2col {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-        @media (max-width: 768px) {
-            .grid-2col {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-        }
-        .card {
-            background-color: #1d1d1f;
-            border-radius: 18px;
-            padding: 32px;
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            transition: transform 0.2s ease;
-        }
-        .card:hover {
-            transform: translateY(-2px);
-        }
-        .card h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 16px;
-            color: #fff;
-        }
-        .card p {
-            font-size: 0.95rem;
-            color: #a1a1a6;
-            line-height: 1.7;
-            margin-bottom: 12px;
-        }
-        .card ul {
-            list-style: none;
-            padding: 0;
-        }
-        .card ul li {
-            color: #a1a1a6;
-            font-size: 0.95rem;
-            padding: 6px 0;
-            padding-left: 20px;
-            position: relative;
-        }
-        .card ul li::before {
-            content: "—";
-            position: absolute;
-            left: 0;
-            color: #86868b;
-        }
-        .stat-row {
-            display: flex;
-            gap: 24px;
-            flex-wrap: wrap;
-            margin: 24px 0;
-        }
-        .stat-item {
-            background-color: #1d1d1f;
-            border-radius: 14px;
-            padding: 20px 28px;
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            text-align: center;
-            flex: 1;
-            min-width: 140px;
-        }
-        .stat-item .number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #fff;
-            display: block;
-        }
-        .stat-item .label {
-            font-size: 0.85rem;
-            color: #86868b;
-            margin-top: 4px;
-        }
-        .faq-item {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-            padding: 20px 0;
-        }
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-        .faq-item h4 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 8px;
-            cursor: default;
-        }
-        .faq-item p {
-            font-size: 0.95rem;
-            color: #a1a1a6;
-            line-height: 1.7;
-        }
-        .cta-block {
-            background: linear-gradient(135deg, #1d1d1f 0%, #2c2c2e 100%);
-            border-radius: 18px;
-            padding: 40px 36px;
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            margin-top: 48px;
-        }
-        .cta-block h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #fff;
-            margin-bottom: 12px;
-        }
-        .cta-block p {
-            color: #a1a1a6;
-            font-size: 1rem;
-            margin-bottom: 24px;
-        }
-        .cta-block .tel-link {
-            display: inline-block;
-            background-color: #fff;
-            color: #000;
-            font-weight: 600;
-            font-size: 1.1rem;
-            padding: 14px 40px;
-            border-radius: 40px;
-            text-decoration: none;
-            transition: background-color 0.2s ease;
-        }
-        .cta-block .tel-link:hover {
-            background-color: #e8e8ed;
-        }
-        footer {
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
-            padding: 32px 0;
-            text-align: center;
-            color: #86868b;
-            font-size: 0.85rem;
-        }
-        @media (max-width: 480px) {
-            .section-title {
-                font-size: 1.6rem;
-            }
-            .card {
-                padding: 24px;
-            }
-            .stat-row {
-                flex-direction: column;
-                gap: 12px;
-            }
-            .cta-block {
-                padding: 28px 20px;
-            }
-            .cta-block h2 {
-                font-size: 1.4rem;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>등촌 노래방 추천 | 프리미엄 사운드 시스템 · 합리적 가격</title>
+ <meta name="description" content="등촌 노래방 추천 최적의 공간. 최신 음향 시스템, 청결한 룸, 합리적 가격으로 완성된 프리미엄 노래방. 24시간 운영, 단체 · 데이트 · 접대 모두 적합. 010-6279-0862 예약.">
+ <meta name="keywords" content="등촌 노래방, 등촌 노래방 추천, 등촌 노래방 가격, 등촌 노래방 예약, 등촌 노래방 후기, 등촌 노래방 시스템, 등촌 노래방 단체">
+ <link rel="canonical" href="https://deungchon-song-tip.namanavi.com/about.html">
+ <meta property="og:title" content="등촌 노래방 추천 | 프리미엄 사운드 시스템 · 합리적 가격">
+ <meta property="og:description" content="등촌 노래방 추천 최적의 공간. 최신 음향 시스템, 청결한 룸, 합리적 가격으로 완성된 프리미엄 노래방. 24시간 운영, 단체 · 데이트 · 접대 모두 적합. 010-6279-0862 예약.">
+ <style>
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+ background-color: #000;
+ color: #f5f5f7;
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ header {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background-color: rgba(0, 0, 0, 0.9);
+ backdrop-filter: blur(20px);
+ -webkit-backdrop-filter: blur(20px);
+ z-index: 1000;
+ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+ }
+ .header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 64px;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ .logo {
+ font-size: 1.4rem;
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ color: #fff;
+ text-decoration: none;
+ }
+ .logo span {
+ color: #86868b;
+ }
+ nav {
+ display: flex;
+ gap: 32px;
+ }
+ nav a {
+ color: #a1a1a6;
+ text-decoration: none;
+ font-size: 0.9rem;
+ font-weight: 500;
+ transition: color 0.2s ease;
+ }
+ nav a:hover {
+ color: #fff;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ }
+ .hamburger span {
+ display: block;
+ width: 22px;
+ height: 2px;
+ background-color: #f5f5f7;
+ margin: 3px 0;
+ transition: all 0.3s ease;
+ }
+ .nav-mobile {
+ display: none;
+ }
+ @media (max-width: 768px) {
+ nav {
+ display: none;
+ }
+ .hamburger {
+ display: flex;
+ }
+ .nav-mobile {
+ display: none;
+ flex-direction: column;
+ background-color: rgba(0, 0, 0, 0.95);
+ position: fixed;
+ top: 64px;
+ left: 0;
+ width: 100%;
+ padding: 24px;
+ gap: 20px;
+ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+ }
+ .nav-mobile a {
+ color: #a1a1a6;
+ text-decoration: none;
+ font-size: 1.1rem;
+ font-weight: 500;
+ }
+ .nav-mobile a:hover {
+ color: #fff;
+ }
+ .nav-mobile.active {
+ display: flex;
+ }
+ }
+ main {
+ padding-top: 88px;
+ padding-bottom: 80px;
+ }
+ .section-title {
+ font-size: 2.2rem;
+ font-weight: 700;
+ letter-spacing: -0.03em;
+ margin-bottom: 48px;
+ color: #fff;
+ line-height: 1.2;
+ }
+ .section-subtitle {
+ font-size: 1rem;
+ color: #86868b;
+ margin-bottom: 32px;
+ font-weight: 400;
+ }
+ .grid-2col {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 40px;
+ }
+ @media (max-width: 768px) {
+ .grid-2col {
+ grid-template-columns: 1fr;
+ gap: 32px;
+ }
+ }
+ .card {
+ background-color: #1d1d1f;
+ border-radius: 18px;
+ padding: 32px;
+ border: 1px solid rgba(255, 255, 255, 0.06);
+ transition: transform 0.2s ease;
+ }
+ .card:hover {
+ transform: translateY(-2px);
+ }
+ .card h3 {
+ font-size: 1.3rem;
+ font-weight: 600;
+ margin-bottom: 16px;
+ color: #fff;
+ }
+ .card p {
+ font-size: 0.95rem;
+ color: #a1a1a6;
+ line-height: 1.7;
+ margin-bottom: 12px;
+ }
+ .card ul {
+ list-style: none;
+ padding: 0;
+ }
+ .card ul li {
+ color: #a1a1a6;
+ font-size: 0.95rem;
+ padding: 6px 0;
+ padding-left: 20px;
+ position: relative;
+ }
+ .card ul li::before {
+ content: "—";
+ position: absolute;
+ left: 0;
+ color: #86868b;
+ }
+ .stat-row {
+ display: flex;
+ gap: 24px;
+ flex-wrap: wrap;
+ margin: 24px 0;
+ }
+ .stat-item {
+ background-color: #1d1d1f;
+ border-radius: 14px;
+ padding: 20px 28px;
+ border: 1px solid rgba(255, 255, 255, 0.06);
+ text-align: center;
+ flex: 1;
+ min-width: 140px;
+ }
+ .stat-item .number {
+ font-size: 2rem;
+ font-weight: 700;
+ color: #fff;
+ display: block;
+ }
+ .stat-item .label {
+ font-size: 0.85rem;
+ color: #86868b;
+ margin-top: 4px;
+ }
+ .faq-item {
+ border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+ padding: 20px 0;
+ }
+ .faq-item:last-child {
+ border-bottom: none;
+ }
+ .faq-item h4 {
+ font-size: 1.1rem;
+ font-weight: 600;
+ color: #fff;
+ margin-bottom: 8px;
+ cursor: default;
+ }
+ .faq-item p {
+ font-size: 0.95rem;
+ color: #a1a1a6;
+ line-height: 1.7;
+ }
+ .cta-block {
+ background: linear-gradient(135deg, #1d1d1f 0%, #2c2c2e 100%);
+ border-radius: 18px;
+ padding: 40px 36px;
+ text-align: center;
+ border: 1px solid rgba(255, 255, 255, 0.06);
+ margin-top: 48px;
+ }
+ .cta-block h2 {
+ font-size: 1.8rem;
+ font-weight: 700;
+ color: #fff;
+ margin-bottom: 12px;
+ }
+ .cta-block p {
+ color: #a1a1a6;
+ font-size: 1rem;
+ margin-bottom: 24px;
+ }
+ .cta-block .tel-link {
+ display: inline-block;
+ background-color: #fff;
+ color: #000;
+ font-weight: 600;
+ font-size: 1.1rem;
+ padding: 14px 40px;
+ border-radius: 40px;
+ text-decoration: none;
+ transition: background-color 0.2s ease;
+ }
+ .cta-block .tel-link:hover {
+ background-color: #e8e8ed;
+ }
+ footer {
+ border-top: 1px solid rgba(255, 255, 255, 0.06);
+ padding: 32px 0;
+ text-align: center;
+ color: #86868b;
+ font-size: 0.85rem;
+ }
+ @media (max-width: 480px) {
+ .section-title {
+ font-size: 1.6rem;
+ }
+ .card {
+ padding: 24px;
+ }
+ .stat-row {
+ flex-direction: column;
+ gap: 12px;
+ }
+ .cta-block {
+ padding: 28px 20px;
+ }
+ .cta-block h2 {
+ font-size: 1.4rem;
+ }
+ }
+ </style>
   <meta property="og:url" content="https://deungchon-song-tip.namanavi.com/about.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <header>
-        <div class="header-inner">
-            <a href="/" class="logo">등촌<span>노래방</span></a>
-            <nav>
-                <a href="/">홈</a>
-                <a href="/info">정보</a>
-                <a href="/price">가격</a>
-                <a href="/review">후기</a>
-                <a href="tel:01062790862">예약</a>
-            </nav>
-            <button class="hamburger" onclick="document.querySelector('.nav-mobile').classList.toggle('active')" aria-label="메뉴 열기">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-        <div class="nav-mobile">
-            <a href="/">홈</a>
-            <a href="/info">정보</a>
-            <a href="/price">가격</a>
-            <a href="/review">후기</a>
-            <a href="tel:01062790862">예약</a>
-        </div>
-    </header>
+ <header>
+ <div class="header-inner">
+ <a href="/" class="logo">등촌<span>노래방</span></a>
+ <nav>
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/price">가격</a>
+ <a href="/review">후기</a>
+ <a href="tel:01062790862">예약</a>
+ </nav>
+ <button class="hamburger" onclick="document.querySelector('.nav-mobile').classList.toggle('active')" aria-label="메뉴 열기">
+ <span></span>
+ <span></span>
+ <span></span>
+ </button>
+ </div>
+ <div class="nav-mobile">
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/price">가격</a>
+ <a href="/review">후기</a>
+ <a href="tel:01062790862">예약</a>
+ </div>
+ </header>
 
 <main class="container">
-  <section>
-    <h1 class="section-title">등촌 노래방, 방문 전 확인 가이드</h1>
-    <p class="section-subtitle">등촌동에서 노래방을 찾는 분들을 위한 기본 정보 안내입니다.</p>
-  </section>
+ <section>
+ <h1 class="section-title">등촌 노래방, 방문 전 확인 가이드</h1>
+ <p class="section-subtitle">등촌동에서 노래방을 찾는 분들을 위한 기본 정보 안내입니다.</p>
+ </section>
 
-  <section class="grid-2col">
-    <div class="card">
-      <h2>사운드와 시설 구성</h2>
-      <p>노래방을 고를 때는 스피커와 마이크 등 음향 장비 상태, 룸 크기와 좌석 배치가 중요한 확인 항목입니다. 업소마다 장비 구성과 관리 상태가 다르므로 방문 전 문의를 통해 확인하는 것이 좋습니다. 조명과 화면 크기, 환기 상태 등 부수적인 시설도 함께 살펴보면 도움이 됩니다.</p>
-    </div>
-    <div class="card">
-      <h2>운영 방식 이해하기</h2>
-      <p>기본 이용 시간, 연장 가능 여부, 예약 방식은 업소별로 차이가 있습니다. 원하는 시간대에 정확히 이용하려면 방문 전 운영 방식을 미리 파악해두는 것이 도움이 됩니다. 평일과 주말의 운영 기준이 다르게 적용되는 경우도 있어 방문 요일을 함께 안내하면 좋습니다.</p>
-    </div>
-  </section>
+ <section class="grid-2col">
+ <div class="card">
+ <h2>사운드와 시설 구성</h2>
+ <p>노래방을 고를 때는 스피커와 마이크 등 음향 장비 상태, 룸 크기와 좌석 배치가 중요한 확인 항목입니다. 업소마다 장비 구성과 관리 상태가 다르므로 방문 전 문의를 통해 확인하는 것이 좋습니다. 조명과 화면 크기, 환기 상태 등 부수적인 시설도 함께 살펴보면 도움이 됩니다.</p>
+ </div>
+ <div class="card">
+ <h2>운영 방식 이해하기</h2>
+ <p>기본 이용 시간, 연장 가능 여부, 예약 방식은 업소별로 차이가 있습니다. 원하는 시간대에 정확히 이용하려면 방문 전 운영 방식을 미리 파악해두는 것이 도움이 됩니다. 평일과 주말의 운영 기준이 다르게 적용되는 경우도 있어 방문 요일을 함께 안내하면 좋습니다.</p>
+ </div>
+ </section>
 
-  <section>
-    <h2 class="section-title">방문 절차 3단계</h2>
-    <div class="stat-row">
-      <div class="stat-item">
-        <p class="number">01</p>
-        <p class="label">문의 및 인원 안내</p>
-      </div>
-      <div class="stat-item">
-        <p class="number">02</p>
-        <p class="label">시간대 및 룸 확인</p>
-      </div>
-      <div class="stat-item">
-        <p class="number">03</p>
-        <p class="label">입장 및 이용</p>
-      </div>
-    </div>
-    <p>전화 문의 시 인원과 희망 시간대를 함께 전달하면 현장에서의 대기 시간을 줄이는 데 도움이 됩니다.</p>
-  </section>
+ <section>
+ <h2 class="section-title">방문 절차 3단계</h2>
+ <div class="stat-row">
+ <div class="stat-item">
+ <p class="number">01</p>
+ <p class="label">문의 및 인원 안내</p>
+ </div>
+ <div class="stat-item">
+ <p class="number">02</p>
+ <p class="label">시간대 및 룸 확인</p>
+ </div>
+ <div class="stat-item">
+ <p class="number">03</p>
+ <p class="label">입장 및 이용</p>
+ </div>
+ </div>
+ <p>전화 문의 시 인원과 희망 시간대를 함께 전달하면 현장에서의 대기 시간을 줄이는 데 도움이 됩니다.</p>
+ </section>
 
-  <section>
-    <h2 class="section-title">가격이 달라지는 이유</h2>
-    <p>이용 비용은 기본 시간, 룸 크기, 인원, 부가 구성(주류·안주 등) 조합에 따라 달라집니다. 동일한 지역이라도 업소별 운영 기준이 다르기 때문에 정확한 금액은 방문 전 문의로 확인하는 것이 가장 정확합니다. 연장 이용 시 적용되는 단가 역시 업소마다 차이가 있어 미리 확인해두는 편이 좋습니다.</p>
-  </section>
+ <section>
+ <h2 class="section-title">가격이 달라지는 이유</h2>
+ <p>이용 비용은 기본 시간, 룸 크기, 인원, 부가 구성(주류·안주 등) 조합에 따라 달라집니다. 동일한 지역이라도 업소별 운영 기준이 다르기 때문에 정확한 금액은 방문 전 문의로 확인하는 것이 가장 정확합니다. 연장 이용 시 적용되는 단가 역시 업소마다 차이가 있어 미리 확인해두는 편이 좋습니다.</p>
+ </section>
 
-  <section>
-    <h2 class="section-title">등촌동 지역 정보</h2>
-    <p>등촌동은 강서구에 위치한 주거·상업 밀집 지역으로, 인근에 다양한 업종의 매장이 함께 자리하고 있습니다. 대중교통 접근이 비교적 편리한 편이라 인근 지역에서도 방문이 수월한 위치로 꼽힙니다. 초행길이라면 이동 경로와 소요 시간을 미리 확인해두는 것을 권장합니다.</p>
-  </section>
+ <section>
+ <h2 class="section-title">등촌동 지역 정보</h2>
+ <p>등촌동은 강서구에 위치한 주거·상업 밀집 지역으로, 인근에 다양한 업종의 매장이 함께 자리하고 있습니다. 대중교통 접근이 비교적 편리한 편이라 인근 지역에서도 방문이 수월한 위치로 꼽힙니다. 초행길이라면 이동 경로와 소요 시간을 미리 확인해두는 것을 권장합니다.</p>
+ </section>
 
-  <section>
-    <h2 class="section-title">이용자들이 많이 묻는 질문</h2>
-    <div class="faq-item active">
-      <h3>등촌동에서 노래방을 고를 때 무엇을 우선 확인해야 하나요</h3>
-      <p>음향 시설 상태, 룸 크기, 운영 시간, 예약 가능 여부를 우선적으로 확인하는 것이 좋습니다.</p>
-    </div>
-    <div class="faq-item">
-      <h3>연장 이용이 가능한가요</h3>
-      <p>대부분의 업소에서 연장 이용이 가능하지만 시간대와 상황에 따라 다르므로 방문 전 확인이 필요합니다.</p>
-    </div>
-    <div class="faq-item">
-      <h3>단체 방문도 가능한가요</h3>
-      <p>인원에 맞는 룸 크기를 미리 문의하면 단체 방문도 준비할 수 있습니다.</p>
-    </div>
-    <div class="faq-item">
-      <h3>주차는 가능한가요</h3>
-      <p>업소별로 주차 가능 여부와 방식이 다르므로 차량으로 방문할 계획이라면 사전에 확인하는 것이 좋습니다.</p>
-    </div>
-  </section>
+ <section>
+ <h2 class="section-title">이용자들이 많이 묻는 질문</h2>
+ <div class="faq-item active">
+ <h3>등촌동에서 노래방을 고를 때 무엇을 우선 확인해야 하나요</h3>
+ <p>음향 시설 상태, 룸 크기, 운영 시간, 예약 가능 여부를 우선적으로 확인하는 것이 좋습니다.</p>
+ </div>
+ <div class="faq-item">
+ <h3>연장 이용이 가능한가요</h3>
+ <p>대부분의 업소에서 연장 이용이 가능하지만 시간대와 상황에 따라 다르므로 방문 전 확인이 필요합니다.</p>
+ </div>
+ <div class="faq-item">
+ <h3>단체 방문도 가능한가요</h3>
+ <p>인원에 맞는 룸 크기를 미리 문의하면 단체 방문도 준비할 수 있습니다.</p>
+ </div>
+ <div class="faq-item">
+ <h3>주차는 가능한가요</h3>
+ <p>업소별로 주차 가능 여부와 방식이 다르므로 차량으로 방문할 계획이라면 사전에 확인하는 것이 좋습니다.</p>
+ </div>
+ </section>
 
-  <div class="cta-block">
-    <p>궁금한 사항은 아래 번호로 문의해 주세요.</p>
-    <a class="tel-link" href="tel:01062790862">01062790862</a>
-  </div>
+ <div class="cta-block">
+ <p>궁금한 사항은 아래 번호로 문의해 주세요.</p>
+ <a class="tel-link" href="tel:01062790862">01062790862</a>
+ </div>
 </main>
 
 
