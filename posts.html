@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/2) · kr-pbn-sr-011</title>
+  <meta name="description" content="kr-pbn-sr-011에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://deungchon-song-tip.namanavi.com/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 16px;
+ scroll-behavior: smooth;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+ background-color: #000;
+ color: #f5f5f7;
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ header {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background-color: rgba(0, 0, 0, 0.9);
+ backdrop-filter: blur(20px);
+ -webkit-backdrop-filter: blur(20px);
+ z-index: 1000;
+ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+ }
+ .header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 64px;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ .logo {
+ font-size: 1.4rem;
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ color: #fff;
+ text-decoration: none;
+ }
+ .logo span {
+ color: #86868b;
+ }
+ nav {
+ display: flex;
+ gap: 32px;
+ }
+ nav a {
+ color: #a1a1a6;
+ text-decoration: none;
+ font-size: 0.9rem;
+ font-weight: 500;
+ transition: color 0.2s ease;
+ }
+ nav a:hover {
+ color: #fff;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 40px;
+ height: 40px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ }
+ .hamburger span {
+ display: block;
+ width: 22px;
+ height: 2px;
+ background-color: #f5f5f7;
+ margin: 3px 0;
+ transition: all 0.3s ease;
+ }
+ .nav-mobile {
+ display: none;
+ }
+ @media (max-width: 768px) {
+ nav {
+ display: none;
+ }
+ .hamburger {
+ display: flex;
+ }
+ .nav-mobile {
+ display: none;
+ flex-direction: column;
+ background-color: rgba(0, 0, 0, 0.95);
+ position: fixed;
+ top: 64px;
+ left: 0;
+ width: 100%;
+ padding: 24px;
+ gap: 20px;
+ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+ }
+ .nav-mobile a {
+ color: #a1a1a6;
+ text-decoration: none;
+ font-size: 1.1rem;
+ font-weight: 500;
+ }
+ .nav-mobile a:hover {
+ color: #fff;
+ }
+ .nav-mobile.active {
+ display: flex;
+ }
+ }
+ main {
+ padding-top: 88px;
+ padding-bottom: 80px;
+ }
+ .section-title {
+ font-size: 2.2rem;
+ font-weight: 700;
+ letter-spacing: -0.03em;
+ margin-bottom: 48px;
+ color: #fff;
+ line-height: 1.2;
+ }
+ .section-subtitle {
+ font-size: 1rem;
+ color: #86868b;
+ margin-bottom: 32px;
+ font-weight: 400;
+ }
+ .grid-2col {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 40px;
+ }
+ @media (max-width: 768px) {
+ .grid-2col {
+ grid-template-columns: 1fr;
+ gap: 32px;
+ }
+ }
+ .card {
+ background-color: #1d1d1f;
+ border-radius: 18px;
+ padding: 32px;
+ border: 1px solid rgba(255, 255, 255, 0.06);
+ transition: transform 0.2s ease;
+ }
+ .card:hover {
+ transform: translateY(-2px);
+ }
+ .card h3 {
+ font-size: 1.3rem;
+ font-weight: 600;
+ margin-bottom: 16px;
+ color: #fff;
+ }
+ .card p {
+ font-size: 0.95rem;
+ color: #a1a1a6;
+ line-height: 1.7;
+ margin-bottom: 12px;
+ }
+ .card ul {
+ list-style: none;
+ padding: 0;
+ }
+ .card ul li {
+ color: #a1a1a6;
+ font-size: 0.95rem;
+ padding: 6px 0;
+ padding-left: 20px;
+ position: relative;
+ }
+ .card ul li::before {
+ content: "—";
+ position: absolute;
+ left: 0;
+ color: #86868b;
+ }
+ .stat-row {
+ display: flex;
+ gap: 24px;
+ flex-wrap: wrap;
+ margin: 24px 0;
+ }
+ .stat-item {
+ background-color: #1d1d1f;
+ border-radius: 14px;
+ padding: 20px 28px;
+ border: 1px solid rgba(255, 255, 255, 0.06);
+ text-align: center;
+ flex: 1;
+ min-width: 140px;
+ }
+ .stat-item .number {
+ font-size: 2rem;
+ font-weight: 700;
+ color: #fff;
+ display: block;
+ }
+ .stat-item .label {
+ font-size: 0.85rem;
+ color: #86868b;
+ margin-top: 4px;
+ }
+ .faq-item {
+ border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+ padding: 20px 0;
+ }
+ .faq-item:last-child {
+ border-bottom: none;
+ }
+ .faq-item h4 {
+ font-size: 1.1rem;
+ font-weight: 600;
+ color: #fff;
+ margin-bottom: 8px;
+ cursor: default;
+ }
+ .faq-item p {
+ font-size: 0.95rem;
+ color: #a1a1a6;
+ line-height: 1.7;
+ }
+ .cta-block {
+ background: linear-gradient(135deg, #1d1d1f 0%, #2c2c2e 100%);
+ border-radius: 18px;
+ padding: 40px 36px;
+ text-align: center;
+ border: 1px solid rgba(255, 255, 255, 0.06);
+ margin-top: 48px;
+ }
+ .cta-block h2 {
+ font-size: 1.8rem;
+ font-weight: 700;
+ color: #fff;
+ margin-bottom: 12px;
+ }
+ .cta-block p {
+ color: #a1a1a6;
+ font-size: 1rem;
+ margin-bottom: 24px;
+ }
+ .cta-block .tel-link {
+ display: inline-block;
+ background-color: #fff;
+ color: #000;
+ font-weight: 600;
+ font-size: 1.1rem;
+ padding: 14px 40px;
+ border-radius: 40px;
+ text-decoration: none;
+ transition: background-color 0.2s ease;
+ }
+ .cta-block .tel-link:hover {
+ background-color: #e8e8ed;
+ }
+ footer {
+ border-top: 1px solid rgba(255, 255, 255, 0.06);
+ padding: 32px 0;
+ text-align: center;
+ color: #86868b;
+ font-size: 0.85rem;
+ }
+ @media (max-width: 480px) {
+ .section-title {
+ font-size: 1.6rem;
+ }
+ .card {
+ padding: 24px;
+ }
+ .stat-row {
+ flex-direction: column;
+ gap: 12px;
+ }
+ .cta-block {
+ padding: 28px 20px;
+ }
+ .cta-block h2 {
+ font-size: 1.4rem;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/2) · kr-pbn-sr-011">
+  <meta property="og:description" content="kr-pbn-sr-011에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://deungchon-song-tip.namanavi.com/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="header-inner">
+ <a href="/" class="logo">등촌<span>노래방</span></a>
+ <nav>
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/price">가격</a>
+ <a href="/review">후기</a>
+ 
+ </nav>
+ <button class="hamburger" onclick="document.querySelector('.nav-mobile').classList.toggle('active')" aria-label="메뉴 열기">
+ 
+ 
+ 
+ </button>
+ </div>
+ <div class="nav-mobile">
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/price">가격</a>
+ <a href="/review">후기</a>
+ 
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 38개 · 1/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260704-117.html">등촌 노래방 정보</a>
+        <p class="post-item__summary">등촌은 서울의 주거 지역 중 하나로, 주변에 다양한 노래방이 자리 잡고 있습니다. 이 지역은 조용한 분위기와 함께 현지 주민들이 자주 찾는 노래방들이 모여 있어, 부담 없이 즐길 수 있는 환경을 제</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-1164.html">등촌 노래방 추천 선택 전에 보는 마포 홍대 단체 가라오케 예약 가이드</a>
+        <p class="post-item__summary">등촌에서 등촌 노래방 추천를 찾는 사람은 대체로 빠른 결론을 원하지만, 빠른 결론이 항상 좋은 선택은 아닙니다. 비슷한 페이지라도 설명의 순서와 근거가 다르면 신뢰도는 달라집니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0465.html">등촌 노래방 추천 대신 선택하는 합정 인디 소셜 라운지 프라이빗 파티 가이드</a>
+        <p class="post-item__summary">친구들과 소규모 파티를 계획할 때 등촌 노래방 추천 정보를 찾는 경우가 많습니다. 하지만 단순히 노래만 부르는 공간보다는, 개성 있는 음악과 대화가 공존하는 환경을 선호하는 분들이 늘고 있습니다. </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0466.html">등촌 노래방 추천 검색 후 방문하는 동대문 마사지 명소 풋쌤의 시간대 전략</a>
+        <p class="post-item__summary">많은 분이 등촌 노래방 추천 정보를 찾다가 지친 몸을 이끌고 힐링할 곳을 찾곤 합니다. 흔히 마사지 샵은 밤늦게 가야 좋다는 오해가 있지만, 이는 사실과 다릅니다. 오히려 오전이나 이른 오후에 방문</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0467.html">등촌 노래방 추천 정보 확인하듯 살펴보는 지수 성장 클리닉과 탈모 관리 전략</a>
+        <p class="post-item__summary">디지털 환경에서 도메인 지수를 관리하는 것은 건강을 관리하는 것과 유사한 충족 조건을 가집니다. 등촌 노래방 추천 같은 키워드 정보를 탐색할 때 꼼꼼하게 따져보는 것처럼, 사이트 운영도 기초 체력을</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0468.html">등촌 노래방 추천 기준처럼 까다로운 마포 셔츠룸 페르소나 최적화와 마케팅 비교</a>
+        <p class="post-item__summary">여러분은 평소 어떤 기준으로 장소를 선택하시나요? 등촌 노래방 추천 리스트를 검색할 때처럼, 우리는 항상 자신만의 검증 기준을 가지고 있습니다. 특히 마포 지역의 셔츠룸 같은 업체를 선정할 때는 더</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0469.html">등촌 노래방 추천 활용한 마포 코인노래방 방음 시설 비교 가이드</a>
+        <p class="post-item__summary">주변에서 등촌 노래방 추천 정보를 찾다 보면 의외로 소음 환경을 간과하는 경우가 많습니다. 특히 밀폐된 공간에서 노래를 즐길 때 옆방의 소음이 유입되면 집중도가 현저히 떨어지기 마련입니다. 사용자는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0470.html">등촌 노래방 추천 기반의 마포 럭셔리 단체 가라오케 예약 가이드</a>
+        <p class="post-item__summary">많은 분이 등촌 노래방 추천 리스트를 참고하면서도 정작 중요한 단체 예약 시에는 어떤 기준으로 가격을 판단해야 할지 어려움을 겪곤 합니다. 규모가 큰 모임일수록 인원수 대비 합리적인 금액 산정과 서</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0471.html">등촌 노래방 추천 확인하는 마포 유흥 투명 정찰제 가격 정보 디렉토리</a>
+        <p class="post-item__summary">등촌 노래방 추천 검색을 통해 정보를 얻으려 할 때, 가장 먼저 주의해야 할 것은 정보의 파편화입니다. 상당수의 방문객이 가격 투명성이 결여된 상태로 입점했다가 결제 과정에서 혼란을 겪는 실패를 반</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0472.html">등촌 노래방 추천 정보와 연결되는 여기에서 확인</a>
+        <p class="post-item__summary">인터넷상에서 등촌 노래방 추천 같은 정보를 찾다 보면, 양질의 콘텐츠를 연결해 주는 신뢰성 높은 링크의 중요성을 실감하게 됩니다. 특히 특정 웹 서비스의 품질을 판별할 때는 콘텐츠의 급수를 정화하는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0473.html">등촌 노래방 추천 이후 마포 셔츠룸 예약 시 눈탱이 피하는 법 가이드</a>
+        <p class="post-item__summary">오랜만에 동창 모임을 계획하며 등촌 노래방 추천 리스트를 검색하는 이들이 많습니다. 하지만 유흥 공간을 찾는 과정에서 예상치 못한 지출로 곤혹을 치르는 사례가 빈번하게 발생하고 있습니다. 특히 접대</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0474.html">등촌 노래방 추천 활용한 4</a>
+        <p class="post-item__summary">흔히 IT 기술과 유흥업 정보는 전혀 접점이 없다고 오해하는 경우가 많습니다. 그러나 등촌 노래방 추천 데이터를 효율적으로 관리하거나 업소 리뷰를 분석하는 로직을 구축하는 과정에서 코딩 역량은 큰 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0475.html">등촌 노래방 추천 서비스 대상 구글 봇 정밀 검진 및 크롤 버짓 밀착 간호</a>
+        <p class="post-item__summary">검색 엔진 최적화를 위해서는 명확한 충족 조건을 갖추는 것이 우선입니다. 등촌 노래방 추천 관련 웹페이지가 검색 결과 상단에 노출되려면 기술적인 기반이 탄탄해야 합니다. 특히 검색 봇이 사이트를 방</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0476.html">등촌 노래방 추천 후기 속 셔츠룸 예약 및 업체 선택의 올바른 기준</a>
+        <p class="post-item__summary">평소 유흥 업소를 이용하면서 과연 이곳이 합리적인 선택인지 고민해 본 적 있으신가요? 등촌 노래방 추천 정보를 활용하는 것도 좋지만, 최근에는 더 특화된 서비스를 찾는 고객들이 늘고 있습니다. 자신</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0477.html">등촌 노래방 추천 활용한 구글 틈새 키워드 트래픽 외환 거래 전략의 기초</a>
+        <p class="post-item__summary">흔히 등촌 노래방 추천 정보를 찾을 때처럼 특정 분야의 유입량을 분석하는 행위는 디지털 자산 운영의 핵심입니다. 타깃이 명확한 키워드를 선점하는 것은 안정적인 플랫폼 운영의 첫걸음이라 할 수 있습니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0478.html">등촌 노래방 추천 검색과 연계된 구글 알고리즘 고신용 도메인 보증 카드 발급</a>
+        <p class="post-item__summary">지역 정보인 등촌 노래방 추천 키워드를 탐색하는 과정은 효율적인 도메인 운영 전략과 궤를 같이합니다. 우수한 서비스와 건실한 디지털 자산은 결국 사용자의 신뢰를 기반으로 성장하게 됩니다. 오늘은 안</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0479.html">등촌 노래방 추천 정보 확인 시 구글 인덱싱 속도 초고속 광회선 대역폭 최적화</a>
+        <p class="post-item__summary">등촌 노래방 추천과 같은 지역성 정보를 사용자에게 빠르게 전달하려면 웹사이트의 구조적 효율성이 필수적입니다. 많은 운영자가 콘텐츠 작성에는 공을 들이지만 정작 검색 엔진이 정보를 가져가는 환경 구축</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0480.html">등촌 노래방 추천 방문과 구글 신뢰 지수 모발이식 솔루션의 도메인 강화법</a>
+        <p class="post-item__summary">등촌 노래방 추천을 찾을 때 위치와 접근성이 중요한 것처럼, 디지털 플랫폼 또한 신뢰 지수를 관리하는 전략이 중요합니다. 웹사이트가 가진 권위가 높아야만 검색 결과 상단에 오랫동안 머무를 수 있습니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0188.html">등촌 노래방 추천 기준을 통해 배우는 홍대 노래방 추천정보</a>
+        <p class="post-item__summary">혹시 홍대 근처에서 모임을 가질 때마다 매번 같은 곳만 고민하고 계시지는 않습니까? 노래방이라는 공간이 다 거기서 거기라고 생각한다면 큰 오산입니다. 등촌 노래방 추천 사례에서 배울 수 있듯이, 공</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0189.html">등촌 노래방 추천 기준을 활용한 공덕 셔츠룸 추천정보 탐색법</a>
+        <p class="post-item__summary">등촌 노래방 추천 검색을 하다 보면 자연스럽게 인근 상권의 시스템에 관심을 갖게 됩니다. 특히 공덕 지역은 다양한 형태의 유흥 문화가 공존하고 있어 신중한 선택이 필요합니다. 이용자는 우선 자신의 </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
